@@ -1,0 +1,22 @@
+<%- include('./partials/header.ejs'); %>
+<link rel="stylesheet" href="login.css">
+<header class="page-header header container-fluid">
+        <div class="overlay"></div>
+        <div class="login">
+            <form id="login" class="container1" method="post">
+                <h1>Login</h1>
+            
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+                <br>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" required>
+                <br>
+                
+                <button type="submit" id="loginbtn" class="btn-outline-light">Login</button>
+                <div id="loginbtnLoader" class="btn btn-outline-secondary btn-lg text-right"><center><i class="fa fa-sync-alt fa-spin"></i></center></div>
+              </form>
+        </div>
+    </header>
+
+<%- include('./partials/footer'); %>

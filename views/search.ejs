@@ -1,0 +1,50 @@
+<%- include('./partials/header.ejs'); %>
+<link rel="stylesheet" href="Gprofile.css">
+
+    
+    
+    <div class="container emp-profile">
+    <form method="get" id="searchForm">
+    <div class ="row">
+    <div class="col-md-4">
+        <input type="text" class="form-control" name="name" value="<%=name%>" placeholder="enter a name to search">
+    </div>
+    <div class="col-md-4">
+        <select name="type" class="form-control">
+            <option value="Female">Select a Bride/Groom</option>
+            <option value="Female" <%= type== 'Female' ? 'selected' : '' %>>Bride</option>
+            <option value="Male" <%= type== 'Male' ? 'selected' : '' %>>Groom</option>
+        </select>
+    </div>
+     <div class="col-md-2"> <button type="submit" class="btn btn-primary">Submit</button></div>
+    </form>
+</div>
+    
+
+                                    
+        <% if(searchResult.length > 0 ) {%>    
+                <% searchResult.forEach(function(user){ %>
+                <div class="row" style="margin-top:20px;">
+                <div class="col-md-4">
+                    <div class="profile-img">
+                        <% if (type == 'Female') { %> <img src="images/bride-image.jpg" alt=""/> <% } %> 
+                        <% if (type == 'Male') { %> <img src="images/groom-image.jpg" alt=""/> <% } %> 
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="profile-head">
+                                <h5> <%= user.firstName+' '+user.lastName %> </h5>
+                                <h6>  <%= user.profession%>  </h6>
+                        
+                    </div>
+                </div>
+            </div>
+           <% }); %>
+
+        <% } else {%>   
+          <% if (name != '') { %> No data found! <% } %>
+        <% } %>
+    </div>
+   
+
+<%- include('./partials/footer'); %>

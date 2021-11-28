@@ -1,0 +1,45 @@
+Nirbhaya Kumar
+nirbhaya1@gmail.com
+
+
+
+
+----------------------------------------------
+
+C:\Users\Admin\Desktop\Matrimonial\views\partials\header.ejs
+
+href="profiles" >> href="profile"
+-----------------------------------------------------
+Ankit Kumar
+ankit1@gmail.com
+917658888
+
+------------------------------------------------------------
+Vivek Kumar
+vivek1@gmail.com
+9717657777
+------------------------------------------------------------
+Anjali Sharma
+anjali1@gmail.com
+9717655555
+
+-------------------------------------------------------------
+Ria Sharma
+ria1@gmail.com
+9717654444
+
+---------------------------------------------------------------------
+Laxmi Agarwal
+laxmi1@gmail.com
+9717666666
+
+
+
+
+
+
+
+
+
+
+

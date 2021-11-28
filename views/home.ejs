@@ -1,0 +1,51 @@
+<%- include('./partials/header.ejs'); %>
+
+
+    <header class="page-header header container-fluid">
+        <div class="overlay"></div>
+        <div class="description">
+            <h1>ShadiPortal</h1>
+            <p>It is a Mini project ,
+               which helps you to find your life partner and spread love.
+            </p>
+            <% if(isLogin) {%>
+            <a button class="btn btn-outline-secondary btn-lg" href="search">Search Profile</button></a>
+            <% } %>
+        </div>
+    </header>
+    
+<div class="container features">
+        <h1 class="heading">ShadiPortal Stories</h1>
+        <br>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <h3 class="feature-title">Sameer & Mahira</h3>
+                <img src="images/happy-couple-1.jpg" class="img-fluid">
+                <p>Sameer & Mahira were the first couples who were engaged in ShadiPortal (pun intended), by our platform.
+                </p>
+
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <h3 class="feature-title">Nisha & Kabir</h3>
+                <img src="images/happy-couple-2.jpg" class="img-fluid">
+                <p>"Talking to him was like talking to my soul mate, thank you ShadiPortal for introducing us and making him part of my life."
+                    -Nisha
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <h3 class="feature-title">Get in Touch!</h3>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Name" name="">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email Address" name="email">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" placeholder="Your Message" rows="4"></textarea>
+                </div>
+                <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+            </div>
+        </div>
+    </div>
+
+<%- include('./partials/footer'); %>
